@@ -1,25 +1,29 @@
-import { IFAQ } from "@/types";
-import { siteDetails } from "./siteDetails";
+import { IFAQ } from '@/types';
 
 export const faqs: IFAQ[] = [
-    {
-        question: `Is ${siteDetails.siteName} secure?`,
-        answer: 'Absolutely. We use bank-level encryption to protect your data and never store your login information. Plus, our biometric authentication adds an extra layer of security.',
-    },
-    {
-        question: `Can I use ${siteDetails.siteName} on multiple devices?`,
-        answer: 'Absolutely! Your Finwise account syncs seamlessly across all your devices - smartphone, tablet, and computer.',
-    },
-    {
-        question: 'Can I connect all my bank accounts?',
-        answer: `Yes! ${siteDetails.siteName} supports connections with over 10,000 financial institutions worldwide. Simply log in through our secure portal to link your accounts.`
-    },
-    {
-        question: 'Do I need any financial expertise to use the investing features?',
-        answer: 'Not at all! Our expert-curated portfolios and educational resources make investing accessible to everyone, regardless of experience level.',
-    },
-    {
-        question: 'What if I need help using the app?',
-        answer: 'Our dedicated support team is available 24/7 via chat or email. Plus, we offer extensive in-app tutorials and a comprehensive knowledge base to help you make the most of Finwise.'
-    }
+  {
+    question: '写真や素材がなくても制作できますか？',
+    answer:
+      'はい、問題ございません。Unsplashなどのフリー素材やプロ品質のストック画像を活用し、業種に適した素材をご提案いたします。お客様の事業に合わせて最適な画像選定を行います。',
+  },
+  {
+    question: 'WordPressからの移行は可能ですか？',
+    answer:
+      'はい、WordPressサイトからの移行も承っております。既存コンテンツを活用しながら、より高速で効果的なLPに生まれ変わらせます。SEO評価を維持しながらの移行も可能です。',
+  },
+  {
+    question: '制作期間はどのくらいですか？',
+    answer:
+      '最短2週間から1ヶ月程度を目安としております。お急ぎの場合は特急対応も可能です。詳細なスケジュールはお打ち合わせ時にご相談させていただきます。',
+  },
+  {
+    question: '制作後の運用サポートはありますか？',
+    answer:
+      'はい、制作後も安心してご利用いただけるよう、更新方法のレクチャーから継続的なサポートまで提供しております。効果測定レポートや改善提案も定期的に行います。',
+  },
+  {
+    question: 'スマートフォン対応は含まれますか？',
+    answer:
+      'もちろんです。すべてのプランでレスポンシブデザインを標準対応しており、PC・タブレット・スマートフォンで最適な表示を実現します。モバイルファーストの設計で制作いたします。',
+  },
 ];

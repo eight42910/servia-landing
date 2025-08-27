@@ -1,0 +1,55 @@
+---
+alwaysApply: true
+---
+
+# Servia Landing Page プロジェクトルール
+
+## 技術スタック遵守
+
+- Next.js 14 (App Router) を使用
+- TypeScript を厳格に適用（any 型禁止）
+- Tailwind CSS のユーティリティクラスを優先
+- React Server Components を可能な限り使用
+
+## ファイル・フォルダ構成
+
+- コンポーネントは機能別に整理（layout/, sections/, common/）
+- データファイルは src/data/ に配置
+- 型定義は src/types.ts に集約
+- 新規ページは src/app/ 配下に作成
+
+## コーディング規約
+
+- 関数コンポーネントは const + arrow function で記述
+- Props は interface で型定義
+- className は Tailwind のデザイントークンを使用
+- 画像は next/image を使用（priority 設定も考慮）
+
+## デザイン・UX
+
+- レスポンシブデザイン必須（mobile-first）
+- アクセシビリティ配慮（alt, aria-label, キーボード操作）
+- Loading 状態と Error 状態の適切な処理
+- CTA ボタンは目立つ配置とスタイル
+
+## パフォーマンス
+
+- Lighthouse スコア 90+ を目標
+- 画像最適化（WebP 形式、適切なサイズ）
+- バンドルサイズの監視
+- Core Web Vitals の最適化
+
+## 小規模事業者向け LP 特有
+
+- 信頼感を与えるデザイン
+- 明確な CTA 配置
+- 問い合わせフォームの UX 重視
+- モバイルファーストの設計
+
+## ターミナル使用ルール
+
+- **開発サーバーの起動は禁止**: `npm run dev`、`yarn dev`、`pnpm dev` などの開発サーバー起動コマンドは、ユーザーから明示的に指示された場合のみ実行する
+- **ビルドコマンドは禁止**: `npm run build`、`yarn build`、`pnpm build` などのビルドコマンドは、ユーザーから明示的に指示された場合のみ実行する
+- **ファイル操作は許可**: ファイルの作成、削除、移動などのファイルシステム操作はターミナルを使用して問題ない
+- **パッケージ管理は許可**: `npm install`、`yarn add`、`pnpm add` などのパッケージインストールは許可する
+- **理由**: Agent 機能使用時にターミナルが重複してキャッシュ問題が発生するため、開発サーバーとビルドはユーザーが手動で管理する

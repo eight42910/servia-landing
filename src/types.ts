@@ -13,7 +13,7 @@ export interface IBenefit {
 export interface IBenefitBullet {
   title: string;
   description: string;
-  icon: JSX.Element;
+  iconName: string;
 }
 
 export interface IPricing {

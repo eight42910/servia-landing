@@ -1,6 +1,15 @@
 export const ctaDetails = {
-    heading: 'Join Over 1 Million Users To Transform Your Finances',
-    subheading: 'Your journey to financial freedom starts here. Download Finwise today and take the first step towards a brighter financial future!',
-    appStoreUrl: '#',
-    googlePlayUrl: '#'
-}
+  heading: '無料相談で、あなたの事業を次のステップへ',
+  subheading:
+    'まずはお気軽にご相談ください。お客様の事業に最適なLP制作プランをご提案いたします。',
+  primaryCta: {
+    text: '無料相談を申し込む',
+    url: '#contact',
+  },
+  secondaryCta: {
+    text: 'LINEで相談',
+    url: 'https://line.me/ti/p/@servia',
+  },
+  businessHours: '平日 9:00-18:00',
+  responseTime: '24時間以内にご返信',
+};
