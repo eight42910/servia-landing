@@ -24,10 +24,10 @@ const FAQ: React.FC = () => {
             お気軽にお問い合わせください
           </p>
           <a
-            href="mailto:contact@servia-landing.com"
+            href="mailto:info@servia.jp"
             className="mt-3 block text-xl lg:text-4xl text-secondary font-semibold hover:underline text-center lg:text-left"
           >
-            contact@servia-landing.com
+            info@servia.jp
           </a>
         </div>
 

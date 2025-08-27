@@ -65,26 +65,28 @@ const FeatureSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
         viewport={{ once: true }}
       >
         <div
-          className={clsx('flex flex-wrap items-center w-full max-w-lg', {
+          className={clsx('flex flex-wrap items-center w-full max-w-2xl', {
             'justify-start': imageAtRight,
             'lg:order-1 justify-end': !imageAtRight,
           })}
         >
-          <div className="w-full  text-center lg:text-left ">
+          <div className="w-full text-left px-4 lg:px-0">
             <motion.div
               className="flex flex-col w-full"
               variants={childVariants}
             >
               <SectionTitle>
-                <h3 className="lg:max-w-2xl">{title}</h3>
+                <h3 className="text-2xl lg:text-3xl font-bold leading-tight lg:max-w-2xl">
+                  {title}
+                </h3>
               </SectionTitle>
 
-              <p className="mt-1.5 mx-auto lg:ml-0 leading-normal text-foreground-accent">
+              <p className="mt-3 lg:ml-0 leading-relaxed text-foreground-accent text-base lg:text-lg">
                 {description}
               </p>
             </motion.div>
 
-            <div className="mx-auto lg:ml-0 w-full">
+            <div className="lg:ml-0 w-full mt-6">
               {bullets.map((item, index) => (
                 <FeatureBullet
                   key={index}

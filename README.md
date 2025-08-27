@@ -1,10 +1,12 @@
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fnexi-launch%2Ffinwise-landing-page)
 
-# Finwise - Next.js + Tailwind Landing Page Template
+# Servia - 小規模事業者向けランディングページ
 
-Finwise is a lightweight, easily configurable, and customizable **Next.js** and **Tailwind CSS** landing page template. It’s built to be adaptable, performant, and perfect for any product launch, portfolio, or promotional site.
+Servia は小規模事業者の集客・運用・Web 改善をワンストップでサポートするランディングページです。**Next.js 14** と **Tailwind CSS** を使用して構築されています。
 
-Try out the demo here: [https://finwise-omega.vercel.app](https://finwise-omega.vercel.app).
+## テンプレートについて
+
+このプロジェクトは [Finwise Landing Page Template](https://github.com/nexi-launch/finwise-landing-page) by Nexi Launch をベースに開発されています。
 
 Please check out the documentation below to get started.
 
@@ -96,9 +98,15 @@ Finwise is an open-source project, and we welcome contributions from the communi
 
 Join our community discussions on GitHub to share ideas, ask questions, or suggest improvements. Let’s build something amazing together!
 
+---
 
---- 
+## ライセンス
 
-## License
+このプロジェクトは MIT ライセンスの下で公開されています。
 
-This project is open-source and available under the MIT License. Feel free to use, modify, and distribute it for personal or commercial projects.
+### テンプレートクレジット
+
+- **ベーステンプレート**: [Finwise Landing Page Template](https://github.com/nexi-launch/finwise-landing-page)
+- **作成者**: Nexi Launch
+- **ライセンス**: MIT License
+- **カスタマイズ**: Servia 向けに大幅カスタマイズ

@@ -1,38 +1,36 @@
 import { IMenuItem, ISocials } from '@/types';
 
-export const footerDetails: {
-  subheading: string;
-  quickLinks: IMenuItem[];
-  email: string;
-  telephone: string;
-  socials: ISocials;
-} = {
+export const footerDetails = {
   subheading:
-    'Empowering businesses with cutting-edge financial technology solutions.',
+    '小規模事業者の集客・運用・Web改善をワンストップでサポート。成果に直結するランディングページを提供します。',
   quickLinks: [
     {
-      text: 'Features',
+      text: '特徴',
       url: '#features',
     },
     {
-      text: 'Pricing',
+      text: '料金プラン',
       url: '#pricing',
     },
     {
-      text: 'Testimonials',
+      text: 'お客様の声',
       url: '#testimonials',
     },
+    {
+      text: 'よくある質問',
+      url: '#faq',
+    },
+    {
+      text: 'お問い合わせ',
+      url: '#contact',
+    },
   ],
-  email: 'address@yoursite.com',
-  telephone: '+1 (123) 456-7890',
+  email: 'info@servia.jp',
+  telephone: '03-1234-5678',
   socials: {
-    // github: 'https://github.com',
-    // x: 'https://twitter.com/x',
-    twitter: 'https://twitter.com/Twitter',
-    facebook: 'https://facebook.com',
-    // youtube: 'https://youtube.com',
-    linkedin: 'https://www.linkedin.com',
-    // threads: 'https://www.threads.net',
-    instagram: 'https://www.instagram.com',
+    twitter: 'https://twitter.com/ServiaBusiness',
+    facebook: 'https://www.facebook.com/servia.business',
+    instagram: 'https://www.instagram.com/servia.business',
+    linkedin: 'https://www.linkedin.com/company/servia-business',
   },
 };

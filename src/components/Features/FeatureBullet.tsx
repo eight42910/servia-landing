@@ -18,10 +18,10 @@ const FeatureBullet: React.FC<IBenefitBullet> = ({
 }: IBenefitBullet) => {
   return (
     <motion.div
-      className="flex flex-col items-center mt-8 gap-3 lg:gap-5 lg:flex-row lg:items-start"
+      className="flex flex-row items-start mt-8 gap-4 lg:gap-5"
       variants={childVariants}
     >
-      <div className="flex justify-center mx-auto lg:mx-0 flex-shrink-0 mt-3 w-fit">
+      <div className="flex justify-center flex-shrink-0 mt-1 w-fit">
         {iconName === 'target' && <FiTarget size={26} />}
         {iconName === 'trending-up' && <FiTrendingUp size={26} />}
         {iconName === 'bar-chart' && <FiBarChart2 size={26} />}
@@ -30,9 +30,11 @@ const FeatureBullet: React.FC<IBenefitBullet> = ({
         {iconName === 'settings' && <FiSettings size={26} />}
         {iconName === 'zap' && <FiZap size={26} />}
       </div>
-      <div>
-        <h4 className="text-lg font-semibold">{title}</h4>
-        <p className="text-base text-foreground-accent">{description}</p>
+      <div className="flex-1">
+        <h4 className="text-lg font-semibold mb-2">{title}</h4>
+        <p className="text-base text-foreground-accent leading-relaxed">
+          {description}
+        </p>
       </div>
     </motion.div>
   );
