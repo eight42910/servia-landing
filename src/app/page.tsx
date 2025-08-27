@@ -2,6 +2,7 @@ import Hero from '@/components/Hero';
 import Testimonials from '@/components/Testimonials';
 import Pricing from '@/components/Pricing/Pricing';
 import FAQ from '@/components/FAQ';
+import Logos from '@/components/Logos';
 import Features from '@/components/Features/Features';
 import Container from '@/components/Container';
 import Section from '@/components/Section';
@@ -12,10 +13,11 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Hero />
+      <Logos />
       <Pain />
       <Container>
         <Features />
-
+        
         <Section
           id="testimonials"
           title="お客様の声"
