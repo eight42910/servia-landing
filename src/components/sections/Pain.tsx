@@ -64,15 +64,17 @@ const Pain: React.FC = () => {
           transition={{ duration: 0.6 }}
         >
           <SectionTitle>
-            <h2 className="text-neutral-900">こんなお悩み、ありませんか？</h2>
+            <h2 className="text-neutral-900 md:text-center text-left">
+              こんなお悩み、ありませんか？
+            </h2>
           </SectionTitle>
-          <p className="mt-4 text-lg text-neutral-600 max-w-2xl mx-auto">
+          <p className="mt-4 text-left md:text-center text-base lg:text-lg text-neutral-600 max-w-2xl mx-auto px-4 lg:px-0 leading-relaxed">
             多くの小規模事業者様が抱える、Web運用の共通課題
           </p>
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 lg:px-0"
           variants={containerVariants}
           initial="offscreen"
           whileInView="onscreen"
@@ -84,14 +86,14 @@ const Pain: React.FC = () => {
               className="bg-white rounded-2xl p-8 shadow-card hover:shadow-elevate transition-shadow duration-300 border border-neutral-200"
               variants={cardVariants}
             >
-              <div className="flex flex-col items-center text-center">
+              <div className="flex flex-col items-center lg:items-center text-left lg:text-center">
                 <div className="mb-6 p-4 rounded-full bg-neutral-100 text-neutral-600">
                   {getIcon(pain.iconType)}
                 </div>
-                <h3 className="text-xl font-semibold text-neutral-900 mb-4 leading-tight">
+                <h3 className="text-xl font-semibold text-neutral-900 mb-4 leading-tight w-full">
                   {pain.title}
                 </h3>
-                <p className="text-neutral-600 leading-relaxed">
+                <p className="text-neutral-600 leading-relaxed text-base w-full">
                   {pain.description}
                 </p>
               </div>
@@ -100,13 +102,13 @@ const Pain: React.FC = () => {
         </motion.div>
 
         <motion.div
-          className="text-center mt-12"
+          className="text-center mt-12 px-4 lg:px-0"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.8, duration: 0.6 }}
         >
-          <p className="text-lg text-neutral-700 font-medium">
+          <p className="text-base lg:text-lg text-neutral-700 font-medium">
             これらの課題、Serviaが解決いたします
           </p>
         </motion.div>
