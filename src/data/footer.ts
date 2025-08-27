@@ -1,6 +1,12 @@
 import { IMenuItem, ISocials } from '@/types';
 
-export const footerDetails = {
+export const footerDetails: {
+  subheading: string;
+  quickLinks: IMenuItem[];
+  email: string;
+  telephone: string;
+  socials: ISocials;
+} = {
   subheading:
     '小規模事業者の集客・運用・Web改善をワンストップでサポート。成果に直結するランディングページを提供します。',
   quickLinks: [
@@ -34,3 +40,5 @@ export const footerDetails = {
     linkedin: 'https://www.linkedin.com/company/servia-business',
   },
 };
+
+export default footerDetails;
